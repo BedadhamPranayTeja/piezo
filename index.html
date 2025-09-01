@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piezoelectric Tile Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="project-header">
+            <h1>Piezoelectric Tile Project: Energy Harvesting from Footsteps</h1>
+            <p class="project-concept">A robot that eats footsteps and spits out electricity</p>
+            <div class="overall-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="overallProgress"></div>
+                </div>
+                <span id="progressText">0% Complete</span>
+            </div>
+        </header>
+
+        <nav class="project-nav">
+            <button class="nav-btn active" data-section="overview">Overview</button>
+            <button class="nav-btn" data-section="phases">Phases</button>
+            <button class="nav-btn" data-section="circuit">Circuit</button>
+            <button class="nav-btn" data-section="calculator">Calculator</button>
+            <button class="nav-btn" data-section="materials">Materials</button>
+            <button class="nav-btn" data-section="measurements">Data</button>
+            <button class="nav-btn" data-section="education">Learn</button>
+        </nav>
+
+        <main class="project-content">
+            <!-- Overview Section -->
+            <section id="overview" class="content-section active">
+                <div class="overview-grid">
+                    <div class="card project-info">
+                        <div class="card__header">
+                            <h3>Project Overview</h3>
+                        </div>
+                        <div class="card__body">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1755331926/pplx_project_search_images/868a7e5bcf6b269eeb738da6ad59817b2bd6734c.png" alt="Smart floor energy harvesting" class="project-image">
+                            <p>This project demonstrates energy harvesting from human footsteps using piezoelectric tiles combined with hydraulic force amplification. The system converts mechanical energy from walking into electrical energy that can power small devices.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card phase-overview">
+                        <div class="card__header">
+                            <h3>Project Phases</h3>
+                        </div>
+                        <div class="card__body">
+                            <div class="phase-list">
+                                <div class="phase-item" data-phase="0">
+                                    <div class="phase-number">1</div>
+                                    <div class="phase-info">
+                                        <h4>Electronics Simulation</h4>
+                                        <div class="phase-progress">
+                                            <div class="progress-bar small">
+                                                <div class="progress-fill" data-progress="phase-0"></div>
+                                            </div>
+                                            <span class="progress-text" data-text="phase-0">0%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phase-item" data-phase="1">
+                                    <div class="phase-number">2</div>
+                                    <div class="phase-info">
+                                        <h4>Mechanical Prototype</h4>
+                                        <div class="phase-progress">
+                                            <div class="progress-bar small">
+                                                <div class="progress-fill" data-progress="phase-1"></div>
+                                            </div>
+                                            <span class="progress-text" data-text="phase-1">0%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phase-item" data-phase="2">
+                                    <div class="phase-number">3</div>
+                                    <div class="phase-info">
+                                        <h4>Integration & Testing</h4>
+                                        <div class="phase-progress">
+                                            <div class="progress-bar small">
+                                                <div class="progress-fill" data-progress="phase-2"></div>
+                                            </div>
+                                            <span class="progress-text" data-text="phase-2">0%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phase-item" data-phase="3">
+                                    <div class="phase-number">4</div>
+                                    <div class="phase-info">
+                                        <h4>Optimization</h4>
+                                        <div class="phase-progress">
+                                            <div class="progress-bar small">
+                                                <div class="progress-fill" data-progress="phase-3"></div>
+                                            </div>
+                                            <span class="progress-text" data-text="phase-3">0%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Phases Section -->
+            <section id="phases" class="content-section">
+                <div class="phase-selector">
+                    <button class="phase-btn active" data-phase="0">Phase 1: Electronics</button>
+                    <button class="phase-btn" data-phase="1">Phase 2: Mechanical</button>
+                    <button class="phase-btn" data-phase="2">Phase 3: Integration</button>
+                    <button class="phase-btn" data-phase="3">Phase 4: Optimization</button>
+                </div>
+
+                <div class="phase-content">
+                    <div class="phase-details active" data-phase-content="0">
+                        <div class="card">
+                            <div class="card__header">
+                                <h3>Electronics Simulation</h3>
+                            </div>
+                            <div class="card__body">
+                                <div class="phase-grid">
+                                    <div class="phase-info-section">
+                                        <h4>Goal</h4>
+                                        <p>Validate electrical circuit design</p>
+                                        
+                                        <h4>Components Needed</h4>
+                                        <ul>
+                                            <li>Function Generator</li>
+                                            <li>4x 1N4148 Diodes</li>
+                                            <li>100µF Capacitor</li>
+                                            <li>LED + 220Ω Resistor</li>
+                                            <li>Breadboard</li>
+                                        </ul>
+                                        
+                                        <h4>Expected Challenges</h4>
+                                        <p>Proper rectifier design and energy storage</p>
+                                        
+                                        <h4>Success Criteria</h4>
+                                        <p>LED flashes from stored energy</p>
+                                    </div>
+                                    
+                                    <div class="milestones-section">
+                                        <h4>Milestones</h4>
+                                        <div class="milestone-list">
+                                            <label class="milestone">
+                                                <input type="checkbox" data-milestone="0-0">
+                                                <span>Setup Wokwi simulation</span>
+                                            </label>
+                                            <label class="milestone">
+                                                <input type="checkbox" data-milestone="0-1">
+                                                <span>Build bridge rectifier</span>
+                                            </label>
+                                            <label class="milestone">
+                                                <input type="checkbox" data-milestone="0-2">
+                                                <span>Test energy storage</span>
+                                            </label>
+                                            <label class="milestone">
+                                                <input type="checkbox" data-milestone="0-3">
+                                                <span>Validate LED operation</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="phase-details" data-phase-content="1">
+                        <div class="card">
+                            <div class="card__header">
+                                <h3>Mechanical Prototype</h3>
+                            </div>
+                            <div class="card__body">
+                                <div class="phase-grid">
+                                    <div class="phase-info-section">
+                                        <h4>Goal</h4>
+                                        <p>Build hydraulic force amplifier</p>
+                                        
+                                        <h4>Components Needed</h4>
+                                        <ul>
+                                            <li>Large syringe (60ml)</li>
+                                            <li>Small syringe (5ml)</li>
+                                            <li>Clear tubing</li>
+                                            <li>Water</li>
+                                            <li>Check valve</li>
+                                            <li>Pressure gauge</li>
+                                        </ul>
+                                        
+                                        <h4>Expected Challenges</h4>
+                                        <p>Mechanical durability and pressure losses</p>
+                                        
+                                        <h4>Success Criteria</h4>
+                                        <p>12x force amplification achieved</p>
+                                    </div>
+                                    
+                                    <div class="milestones-section">
+                                        <h4>Milestones</h4>
+                                        <div class="milestone-list">
+                                            <label class="milestone">
+                                                <input type="checkbox" data-milestone="1-0">
+                                                <span>Connect syringes</span>
+                                            </label>
+                                            <label class="milestone">
+                                                <input type="checkbox" data-milestone="1-1">
+                                                <span>Calculate force amplification</span>
+                                            </label>
+                                            <label class="milestone">
+                                                <input type="checkbox" data-milestone="1-2">
+                                                <span>Add check valve</span>
+                                            </label>
+                                            <label class="milestone">
+                                                <input type="checkbox" data-milestone="1-3">
+                                                <span>Test pressure system</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="phase-details" data-phase-content="2">
+                        <div class="card">
+                            <div class="card__header">
+                                <h3>Integration & Testing</h3>
+                            </div>
+                            <div class="card__body">
+                                <div class="phase-grid">
+                                    <div class="phase-info-section">
+                                        <h4>Goal</h4>
+                                        <p>Combine mechanical and electrical systems</p>
+                                        
+                                        <h4>Components Needed</h4>
+                                        <ul>
+                                            <li>Real piezoelectric element</li>
+                                            <li>Breadboard circuit</li>
+                                            <li>Coupling mechanism</li>
+                                            <li>Impact testing setup</li>
+                                        </ul>
+                                        
+                                        <h4>Expected Challenges</h4>
+                                        <p>Impedance matching and energy transfer</p>
+                                        
+                                        <h4>Success Criteria</h4>
+                                        <p>Real electrical output from footsteps</p>
+                                    </div>
+                                    
+                                    <div class="milestones-section">
+                                        <h4>Milestones</h4>
+                                        <div class="milestone-list">
+                                            <label class="milestone">
+                                                <input type="checkbox" data-milestone="2-0">
+                                                <span>Get piezo element</span>
+                                            </label>
+                                            <label class="milestone">
+                                                <input type="checkbox" data-milestone="2-1">
+                                                <span>Build real circuit</span>
+                                            </label>
+                                            <label class="milestone">
+                                                <input type="checkbox" data-milestone="2-2">
+                                                <span>Create mechanical coupling</span>
+                                            </label>
+                                            <label class="milestone">
+                                                <input type="checkbox" data-milestone="2-3">
+                                                <span>Test integration</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="phase-details" data-phase-content="3">
+                        <div class="card">
+                            <div class="card__header">
+                                <h3>Optimization</h3>
+                            </div>
+                            <div class="card__body">
+                                <div class="phase-grid">
+                                    <div class="phase-info-section">
+                                        <h4>Goal</h4>
+                                        <p>Maximize power output and efficiency</p>
+                                        
+                                        <h4>Components Needed</h4>
+                                        <ul>
+                                            <li>Pressure sensors</li>
+                                            <li>Voltmeter</li>
+                                            <li>Power measurement tools</li>
+                                            <li>Data logging system</li>
+                                        </ul>
+                                        
+                                        <h4>Expected Challenges</h4>
+                                        <p>System efficiency and long-term reliability</p>
+                                        
+                                        <h4>Success Criteria</h4>
+                                        <p>Documented power calculations</p>
+                                    </div>
+                                    
+                                    <div class="milestones-section">
+                                        <h4>Milestones</h4>
+                                        <div class="milestone-list">
+                                            <label class="milestone">
+                                                <input type="checkbox" data-milestone="3-0">
+                                                <span>Measure all parameters</span>
+                                            </label>
+                                            <label class="milestone">
+                                                <input type="checkbox" data-milestone="3-1">
+                                                <span>Optimize energy transfer</span>
+                                            </label>
+                                            <label class="milestone">
+                                                <input type="checkbox" data-milestone="3-2">
+                                                <span>Test durability</span>
+                                            </label>
+                                            <label class="milestone">
+                                                <input type="checkbox" data-milestone="3-3">
+                                                <span>Document results</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Circuit Simulator Section -->
+            <section id="circuit" class="content-section">
+                <div class="circuit-grid">
+                    <div class="card">
+                        <div class="card__header">
+                            <h3>Circuit Configuration</h3>
+                        </div>
+                        <div class="card__body">
+                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/932afa1ff534588f419fb3fdeaf0a695/9f174159-4a77-4162-948c-84eb5ed1fb98/8c9b66ea.png" alt="Piezoelectric Circuit Diagram" class="circuit-diagram">
+                            <h4>Component Specifications</h4>
+                            <div class="component-specs">
+                                <div class="spec-item">
+                                    <strong>Function Generator:</strong> Square wave, 50V peak, 0.5Hz, 2ms pulse
+                                </div>
+                                <div class="spec-item">
+                                    <strong>Bridge Rectifier:</strong> 4x 1N4148 diodes in diamond configuration
+                                </div>
+                                <div class="spec-item">
+                                    <strong>Storage Capacitor:</strong> 100µF electrolytic capacitor
+                                </div>
+                                <div class="spec-item">
+                                    <strong>Load Circuit:</strong> LED + 220Ω resistor
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__header">
+                            <h3>Connection Guide</h3>
+                        </div>
+                        <div class="card__body">
+                            <div class="connection-steps">
+                                <div class="step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">Connect function generator to simulate piezoelectric output</div>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">Build bridge rectifier with 4 diodes in diamond pattern</div>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">Add 100µF capacitor for energy storage</div>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">Connect LED and resistor as load circuit</div>
+                                </div>
+                            </div>
+
+                            <div class="troubleshooting">
+                                <h4>Troubleshooting Tips</h4>
+                                <ul>
+                                    <li>Check diode polarity in bridge rectifier</li>
+                                    <li>Ensure capacitor polarity is correct</li>
+                                    <li>Verify function generator settings</li>
+                                    <li>Test LED separately to confirm it works</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hydraulic Calculator Section -->
+            <section id="calculator" class="content-section">
+                <div class="calculator-grid">
+                    <div class="card">
+                        <div class="card__header">
+                            <h3>Hydraulic Force Calculator</h3>
+                        </div>
+                        <div class="card__body">
+                            <div class="calculator-form">
+                                <div class="form-group">
+                                    <label class="form-label">Large Syringe Volume (ml)</label>
+                                    <input type="number" class="form-control" id="largeSyringeVolume" value="60" min="1">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Small Syringe Volume (ml)</label>
+                                    <input type="number" class="form-control" id="smallSyringeVolume" value="5" min="1">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Input Force (N)</label>
+                                    <input type="number" class="form-control" id="inputForce" value="100" min="1">
+                                </div>
+                            </div>
+                            
+                            <div class="calculation-results">
+                                <div class="result-item">
+                                    <span class="result-label">Force Amplification Ratio:</span>
+                                    <span class="result-value" id="amplificationRatio">12x</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Output Force:</span>
+                                    <span class="result-value" id="outputForce">1200 N</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Pressure:</span>
+                                    <span class="result-value" id="pressure">1.67 N/cm²</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__header">
+                            <h3>Pascal's Principle Visualization</h3>
+                        </div>
+                        <div class="card__body">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1755234929/pplx_project_search_images/b0d6127298b0862b2b89f7ca8de9db2627c8a02e.png" alt="Pascal's Principle with Syringes" class="pascal-diagram">
+                            <div class="formula-display">
+                                <div class="formula">
+                                    <strong>F₂ = F₁ × (A₁/A₂)</strong>
+                                </div>
+                                <div class="formula-explanation">
+                                    Force amplification is proportional to the ratio of syringe cross-sectional areas
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Materials Section -->
+            <section id="materials" class="content-section">
+                <div class="materials-grid">
+                    <div class="card">
+                        <div class="card__header">
+                            <h3>Electronics Materials</h3>
+                        </div>
+                        <div class="card__body">
+                            <div class="material-list">
+                                <label class="material-item">
+                                    <input type="checkbox" class="material-check" data-material="function-gen">
+                                    <div class="material-info">
+                                        <span class="material-name">Function Generator</span>
+                                        <span class="material-cost">$50-200</span>
+                                        <span class="material-source">Electronics supplier</span>
+                                    </div>
+                                </label>
+                                <label class="material-item">
+                                    <input type="checkbox" class="material-check" data-material="diodes">
+                                    <div class="material-info">
+                                        <span class="material-name">4x 1N4148 Diodes</span>
+                                        <span class="material-cost">$2</span>
+                                        <span class="material-source">Electronics store</span>
+                                    </div>
+                                </label>
+                                <label class="material-item">
+                                    <input type="checkbox" class="material-check" data-material="capacitor">
+                                    <div class="material-info">
+                                        <span class="material-name">100µF Capacitor</span>
+                                        <span class="material-cost">$3</span>
+                                        <span class="material-source">Electronics store</span>
+                                    </div>
+                                </label>
+                                <label class="material-item">
+                                    <input type="checkbox" class="material-check" data-material="led-resistor">
+                                    <div class="material-info">
+                                        <span class="material-name">LED + 220Ω Resistor</span>
+                                        <span class="material-cost">$2</span>
+                                        <span class="material-source">Electronics store</span>
+                                    </div>
+                                </label>
+                                <label class="material-item">
+                                    <input type="checkbox" class="material-check" data-material="breadboard">
+                                    <div class="material-info">
+                                        <span class="material-name">Breadboard</span>
+                                        <span class="material-cost">$10</span>
+                                        <span class="material-source">Electronics store</span>
+                                    </div>
+                                </label>
+                                <label class="material-item">
+                                    <input type="checkbox" class="material-check" data-material="piezo">
+                                    <div class="material-info">
+                                        <span class="material-name">Piezoelectric Element</span>
+                                        <span class="material-cost">$15-30</span>
+                                        <span class="material-source">Specialty supplier</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__header">
+                            <h3>Mechanical Materials</h3>
+                        </div>
+                        <div class="card__body">
+                            <div class="material-list">
+                                <label class="material-item">
+                                    <input type="checkbox" class="material-check" data-material="large-syringe">
+                                    <div class="material-info">
+                                        <span class="material-name">60ml Syringe</span>
+                                        <span class="material-cost">$3</span>
+                                        <span class="material-source">Medical supply</span>
+                                    </div>
+                                </label>
+                                <label class="material-item">
+                                    <input type="checkbox" class="material-check" data-material="small-syringe">
+                                    <div class="material-info">
+                                        <span class="material-name">5ml Syringe</span>
+                                        <span class="material-cost">$2</span>
+                                        <span class="material-source">Medical supply</span>
+                                    </div>
+                                </label>
+                                <label class="material-item">
+                                    <input type="checkbox" class="material-check" data-material="tubing">
+                                    <div class="material-info">
+                                        <span class="material-name">Clear Tubing</span>
+                                        <span class="material-cost">$5</span>
+                                        <span class="material-source">Hardware store</span>
+                                    </div>
+                                </label>
+                                <label class="material-item">
+                                    <input type="checkbox" class="material-check" data-material="check-valve">
+                                    <div class="material-info">
+                                        <span class="material-name">Check Valve</span>
+                                        <span class="material-cost">$8</span>
+                                        <span class="material-source">Hardware store</span>
+                                    </div>
+                                </label>
+                                <label class="material-item">
+                                    <input type="checkbox" class="material-check" data-material="pressure-gauge">
+                                    <div class="material-info">
+                                        <span class="material-name">Pressure Gauge</span>
+                                        <span class="material-cost">$15</span>
+                                        <span class="material-source">Hardware store</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="materials-summary">
+                    <div class="card">
+                        <div class="card__body">
+                            <div class="summary-stats">
+                                <div class="stat-item">
+                                    <span class="stat-label">Items Acquired:</span>
+                                    <span class="stat-value" id="acquiredCount">0</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Items Needed:</span>
+                                    <span class="stat-value" id="neededCount">11</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Estimated Total Cost:</span>
+                                    <span class="stat-value">$125-275</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Measurements Section -->
+            <section id="measurements" class="content-section">
+                <div class="measurements-grid">
+                    <div class="card">
+                        <div class="card__header">
+                            <h3>Test Measurements</h3>
+                        </div>
+                        <div class="card__body">
+                            <div class="measurement-form">
+                                <div class="form-group">
+                                    <label class="form-label">Force Applied (N)</label>
+                                    <input type="number" class="form-control" id="measuredForce" step="0.1">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Pressure (N/cm²)</label>
+                                    <input type="number" class="form-control" id="measuredPressure" step="0.01">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Voltage Output (V)</label>
+                                    <input type="number" class="form-control" id="measuredVoltage" step="0.1">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Power Output (mW)</label>
+                                    <input type="number" class="form-control" id="measuredPower" step="0.1">
+                                </div>
+                                <button class="btn btn--primary" id="addMeasurement">Add Measurement</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__header">
+                            <h3>Measurement Data</h3>
+                        </div>
+                        <div class="card__body">
+                            <div class="measurements-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Force (N)</th>
+                                            <th>Pressure (N/cm²)</th>
+                                            <th>Voltage (V)</th>
+                                            <th>Power (mW)</th>
+                                            <th>Efficiency</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="measurementsTableBody">
+                                        <tr class="no-data">
+                                            <td colspan="5">No measurements recorded yet</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__header">
+                        <h3>Performance Chart</h3>
+                    </div>
+                    <div class="card__body">
+                        <div class="chart-container" style="position: relative; height: 300px;">
+                            <canvas id="performanceChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="content-section">
+                <div class="education-grid">
+                    <div class="card">
+                        <div class="card__header">
+                            <h3>Pascal's Principle</h3>
+                        </div>
+                        <div class="card__body">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1754941157/pplx_project_search_images/fdcd1bf53820b467262182ee395badde0940d9a7.png" alt="Piezoelectric Effect Explained" class="education-image">
+                            <div class="formula-section">
+                                <div class="formula-title">Key Formulas:</div>
+                                <div class="formula-item">
+                                    <strong>P₁ = P₂</strong> - Pressure is transmitted equally
+                                </div>
+                                <div class="formula-item">
+                                    <strong>F₂ = F₁ × (A₁/A₂)</strong> - Force amplification
+                                </div>
+                                <div class="formula-item">
+                                    <strong>P = F/A</strong> - Pressure calculation
+                                </div>
+                            </div>
+                            <p>Pascal's principle states that pressure applied to a confined fluid is transmitted equally in all directions. This allows hydraulic systems to amplify force.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__header">
+                            <h3>Piezoelectric Effect</h3>
+                        </div>
+                        <div class="card__body">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1755305977/pplx_project_search_images/c49c26321ced6faaf42bed28dcaf5d6a56ee8743.png" alt="Piezoelectric Tiles Testing" class="education-image">
+                            <p>The piezoelectric effect converts mechanical stress directly into electrical energy. When pressure is applied to certain crystals, they generate an electric charge proportional to the applied force.</p>
+                            <div class="formula-section">
+                                <div class="formula-title">Energy Formulas:</div>
+                                <div class="formula-item">
+                                    <strong>P = V²/R</strong> - Power calculation
+                                </div>
+                                <div class="formula-item">
+                                    <strong>E = 0.5 × C × V²</strong> - Energy stored in capacitor
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__header">
+                            <h3>Bridge Rectifier</h3>
+                        </div>
+                        <div class="card__body">
+                            <p>A bridge rectifier converts alternating current (AC) to direct current (DC) using four diodes arranged in a diamond pattern. This is essential for converting the AC output from piezoelectric elements into usable DC power.</p>
+                            <div class="working-principle">
+                                <h4>How it works:</h4>
+                                <ol>
+                                    <li>During positive half-cycle, current flows through diodes D1 and D2</li>
+                                    <li>During negative half-cycle, current flows through diodes D3 and D4</li>
+                                    <li>The output is always positive, creating pulsed DC</li>
+                                    <li>A capacitor smooths the pulsed DC into steady DC</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__header">
+                            <h3>Energy Harvesting Concepts</h3>
+                        </div>
+                        <div class="card__body">
+                            <p>Energy harvesting involves capturing ambient energy from the environment and converting it into usable electrical power. Common sources include:</p>
+                            <ul>
+                                <li><strong>Kinetic Energy:</strong> Motion, vibration, footsteps</li>
+                                <li><strong>Thermal Energy:</strong> Temperature differences</li>
+                                <li><strong>Solar Energy:</strong> Light from the sun</li>
+                                <li><strong>Radio Frequency:</strong> Electromagnetic waves</li>
+                            </ul>
+                            <p>This project focuses on kinetic energy harvesting using human footsteps as the energy source.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

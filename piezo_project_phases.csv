@@ -1,0 +1,5 @@
+Phase,Primary_Goal,Key_Components,Expected_Challenges,Success_Criteria
+Electronics Simulation,Validate electrical circuit design,"Function generator, bridge rectifier, capacitor, LED",Proper rectifier design and energy storage,LED flashes from stored energy
+Mechanical Prototype,Build hydraulic force amplifier,"Large syringe (60ml), small syringe (5ml), tubing, check valve",Mechanical durability and pressure losses,12x force amplification achieved
+Integration & Testing,Combine mechanical and electrical systems,"Real piezoelectric element, breadboard circuit, coupling mechanism",Impedance matching and energy transfer,Real electrical output from footsteps
+Optimization,Maximize power output and efficiency,"Pressure sensors, voltmeter, power measurement tools",System efficiency and long-term reliability,Documented power calculations

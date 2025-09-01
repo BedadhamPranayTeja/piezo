@@ -1,0 +1,7 @@
+Component,Specification,Function,Critical_Parameters
+Function Generator,"Square wave, 50V peak, 0.5 Hz, 2ms pulse",Simulates piezo voltage pulses,Voltage amplitude and pulse timing
+Bridge Rectifier,4x 1N4148 diodes in diamond configuration,Converts AC to pulsed DC,Forward voltage drop (~0.7V per diode)
+Storage Capacitor,100µF electrolytic capacitor,Stores harvested energy,Capacitance and voltage rating
+Large Syringe,60ml capacity for force input,Receives footstep force input,Cross-sectional area and pressure rating
+Small Syringe,5ml capacity for amplified output,Delivers amplified force to piezo,Cross-sectional area and coupling efficiency
+Piezoelectric Element,PZT disc or buzzer element,Converts mechanical to electrical energy,Force sensitivity and voltage output
