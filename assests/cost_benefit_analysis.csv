@@ -1,0 +1,9 @@
+Factor,Traditional System,Hydraulic Amplified,Economic_Advantage
+Initial Material Cost,$20-50 (piezo + basic circuit),$80-200 (hydraulics + advanced circuit),Higher upfront cost
+Manufacturing Complexity,Low (simple assembly),High (precision hydraulics),More complex manufacturing
+Installation Cost,$10-20 (surface mounting),$50-100 (complex installation),Higher installation cost
+Maintenance Requirements,Minimal (no moving parts),Moderate (seal maintenance),Slightly higher maintenance
+System Lifetime,3-7 years,8-15 years,2-3x longer lifetime
+Energy Output Value,$5-15/year (low output),$50-150/year (high output),10x higher energy value
+ROI Timeline,5-10 years,2-4 years,50% faster payback
+Scalability Cost,Linear scaling,Economies of scale,Better for large deployments

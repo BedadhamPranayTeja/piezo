@@ -1,0 +1,9 @@
+Performance Metric,Traditional Direct,Hydraulic Amplified,Improvement Factor
+Peak Force on Piezo (N),700 (limited by foot pressure),8400 (12x amplification),12x higher
+Typical Voltage Output (V),3-8 V (low due to limited force),20-60 V (high due to amplified force),4-8x higher
+Power Output per Step (mW),0.5-3 mW,10-50 mW,10-20x higher
+Energy per Step (mJ),1-5 mJ,20-100 mJ,10-20x higher
+System Efficiency (%),10-20%,25-40%,2-3x higher
+Power Density (mW/cm³),0.1-0.5,1-5,10x higher
+Frequency Response (Hz),1-100 Hz,0.1-2 Hz (pulse-based),Lower but more efficient
+Load Resistance Matching (kΩ),10-100 kΩ,1-10 kΩ,Better impedance matching

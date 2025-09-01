@@ -1,0 +1,8 @@
+Component,Traditional Piezoelectric,Hydraulic-Amplified System
+Energy Conversion Method,Direct mechanical-to-electrical,Mechanical amplification + electrical conversion
+Force Input Mechanism,Direct footstep pressure on piezo element,Large syringe captures footstep force
+Amplification System,None (direct coupling),Pascal's law hydraulic amplification (12:1)
+Energy Storage Circuit,Simple bridge rectifier + capacitor,Advanced bridge rectifier + energy storage
+Voltage Conditioning,Basic voltage regulation,High-voltage conditioning required
+System Response Time,Instantaneous (μs),Pulse-based (ms)
+Installation Complexity,Simple surface mounting,Complex mechanical assembly required

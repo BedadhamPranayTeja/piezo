@@ -1,0 +1,9 @@
+Application Type,Traditional_Suitability,Hydraulic_Suitability
+Personal Electronics,Limited (very low power),Excellent (sufficient power)
+Emergency Lighting,Poor (insufficient energy),Excellent (high energy per step)
+Sensor Networks,Good (low power requirements),Excellent (powerful and reliable)
+Public Infrastructure,Poor (maintenance intensive),Good (durable and high output)
+Remote Monitoring,Limited (battery backup needed),Excellent (self-sufficient)
+Smart Building Systems,Poor (insufficient power),Excellent (powers building systems)
+Traffic Monitoring,Limited (multiple units needed),Excellent (high-power sensors)
+Large-Scale Deployment,Challenging (many small units),Excellent (fewer high-power units)
